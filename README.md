@@ -154,6 +154,27 @@ router.get('/', async (req, res) => {
   }
 });
 
+##Commands Used During Investigation
+# Connect to EC2
+ssh -i "your-key.pem" ubuntu@<PUBLIC_IP>
+
+# Navigate to project
+cd PostureSec-DevSecOps-Lab
+
+# Check incident status
+./warroom.sh status
+
+# View logs
+./warroom.sh logs
+docker logs warroom-local-backend --tail 50
+
+# Restart the stack
+./warroom.sh down
+./warroom.sh up
+
+# Check running containers
+docker ps
+
 ## What changed:
 Added LIMIT 50 so the application only returns the latest 50 posts.
 Corrected the comment count query to use the proper relationship (c.post_id = p.id).
