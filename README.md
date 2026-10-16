@@ -13,7 +13,7 @@
 
 The PostureSec application suddenly became very slow.  
 
-People trying to view posts were experiencing long waiting times and timeouts. A red warning banner appeared on the website saying a security incident had been detected (INC-002).
+People trying to view posts were experiencing long waiting times and timeouts. A red warning banner appeared on the website saying a security incident had been detegcted (INC-002).
 
 ---
 
